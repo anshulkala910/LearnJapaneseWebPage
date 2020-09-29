@@ -1,0 +1,260 @@
+ <html>
+<head>
+    <meta charset="utf-8" />
+    <title>Matching Katakana</title>
+<link rel="stylesheet" type="text/css" href="Background1.css">
+<link rel="stylesheet" type="text/css" href="Button.css">
+    <style>
+			.box001 {
+				float: left;
+				width: 75px;
+				height: 75px;
+				margin: 2px;
+				margin-left:100px;
+				padding: 1px;
+				border: 1px solid black;
+				background-color: red;
+        }
+
+			.box002 {
+				float: left;
+				width: 75px;
+				height: 75px;
+				margin: 2px;
+				margin-left:100px;
+				padding: 1px;
+				border: 1px solid white;
+				
+        }
+			.b1 {
+				position:absolute;
+				left: 600px;
+    			top: 700px;
+			}
+</style>
+</head>
+<audio id="myAudio">
+<source src="../Writing/ha.mp3" type="audio/mpeg">
+</audio>
+<audio id="myAudio2">
+<source src="../Writing/hi.mp3" type="audio/mpeg">
+</audio>
+<audio id="myAudio3">
+<source src="../Writing/fu.mp3" type="audio/mpeg">
+</audio>
+<audio id="myAudio4">
+<source src="../Writing/he.mp3" type="audio/mpeg">
+</audio>
+<audio id="myAudio5">
+<source src="../Writing/ho.mp3" type="audio/mpeg">
+</audio>
+<div class="bg">
+
+
+<center>
+<h1><img src="../Home/Japan flag.png" height="60px" width="70px">Learn Japanese with exciting games!<img src="../Home/Japan flag.png" height="60px" width="70px"></h1>
+<marquee>This is a project based game.</marquee>
+<br>
+<ul>
+<li class="dropdown">
+    <a href="Index.html" target="_parent" class="dropbtn">Home</a>
+    <div class="dropdown-content">
+      <a href="About Website.html" target="_parent">About Website</a>
+    </div>
+<li class="dropdown">
+    <a href="Writing.html" target="_parent" class="dropbtn">Writing</a>
+    <div class="dropdown-content">
+      <a href="Hiragana.html" target="_parent">Hiragana</a>
+      <a href="Katakana.html" target="_parent">Katakana</a>
+      <a href="Kanji.html" target="_parent">Kanji</a>
+    </div><li class="dropdown">
+    <a href="Common Words.html" target="_parent" class="dropbtn">Common Words</a>
+    <div class="dropdown-content">
+      <a href="Vegetables.html" target="_parent">Vegetables</a>
+      <a href="Fruits.html" target="_parent">Fruits</a>
+      <a href="Greetings.html" target="_parent">Greetings</a>
+      <a href="Other.html" target="_parent">Other</a>
+    </div><li class="dropdown">
+    <a href="Traditions.html" target="_parent" class="dropbtn">Traditions</a>
+    <div class="dropdown-content">
+      <a href="Store.html" target="_parent">Store</a>
+      <a href="Station.html" target="_parent">Station</a>
+    </div><li class="dropdown">
+    <a href="Issues.html" target="_parent" class="dropbtn">Issues</a>
+    <div class="dropdown-content">
+      <a href="Contact details.html" target="_parent">Contact details</a>
+    </div>
+</ul>
+<div class="d1">
+<center>
+<br><br><br><br>
+    <div class="box002" ondrop="drop001(event)">
+        <text ondragstart="dragStart001(event)" draggable="true" id="target001">Ha</text>
+<button onclick="xplayAudio()" type="button"><img src="../Writing/sound.png" width="27px"></button>
+    </div>
+
+    <div class="box002" ondrop="drop002(event)">
+        <text ondragstart="dragStart002(event)" draggable="true" id="target002">Hi</text>
+<button onclick="yplayAudio()" type="button"><img src="../Writing/sound.png" width="27px"></button>
+    </div>
+
+    <div class="box002" ondrop="drop003(event)">
+        <text ondragstart="dragStart003(event)" draggable="true" id="target003">Fu</text>
+<button onclick="zplayAudio()" type="button"><img src="../Writing/sound.png" width="27px"></button>
+    </div>
+
+    <div class="box002" ondrop="drop004(event)">
+        <text ondragstart="dragStart004(event)" draggable="true" id="target004">He</text>
+<button onclick="aplayAudio()" type="button"><img src="../Writing/sound.png" width="27px"></button>
+    </div>
+
+    <div class="box002" ondrop="drop005(event)">
+        <text ondragstart="dragStart005(event)" draggable="true" id="target005">Ho</text>
+<button onclick="bplayAudio()" type="button"><img src="../Writing/sound.png" width="27px"></button>
+    </div>
+    <br /><br /><br /><br />
+
+  <img class="box001" src= "../Writing/he_hira.png" ondrop="drop009(event)" ondragover="allowDrop004(event)" id="place004">
+
+ <img class="box001" src= "../Writing/fu_hira.png" ondrop="drop008(event)" ondragover="allowDrop003(event)" id="place003">
+<img class="box001" src= "../Writing/ho_hira.png" ondrop="drop010(event)" ondragover="allowDrop005(event)" id="place005">
+<img class="box001" src= "../Writing/hi_hira.png" ondrop="drop007(event)" ondragover="allowDrop002(event)" id="place002">
+
+
+
+<img class="box001" src= "../Writing/ha_hira.png" ondrop="drop006(event)" ondragover="allowDrop001(event)" id="place001"> 
+
+ 
+
+    <p id="message001"></p>
+<br><br><br>
+</center>
+</div>
+</div>
+<script>
+var x = document.getElementById("myAudio"); 
+
+function xplayAudio() { 
+  x.play(); 
+} 
+var y = document.getElementById("myAudio2"); 
+
+function yplayAudio() { 
+  y.play(); 
+} 
+var z = document.getElementById("myAudio3"); 
+
+function zplayAudio() { 
+  z.play(); 
+} 
+var a = document.getElementById("myAudio4"); 
+
+function aplayAudio() { 
+  a.play(); 
+} 
+var b = document.getElementById("myAudio5"); 
+
+function bplayAudio() { 
+  b.play(); 
+} 
+function dragStart001(event) {
+    event.dataTransfer.setData("choice001", event.target.id);
+}
+
+function dragStart002(event) {
+    event.dataTransfer.setData("choice002", event.target.id);
+}
+
+function dragStart003(event) {
+    event.dataTransfer.setData("choice003", event.target.id);
+}
+
+function dragStart004(event) {
+    event.dataTransfer.setData("choice004", event.target.id);
+}
+
+function dragStart005(event) {
+    event.dataTransfer.setData("choice005", event.target.id);
+}
+
+function allowDrop001(event) {
+    event.preventDefault();
+}
+
+function allowDrop002(event) {
+    event.preventDefault();
+}
+
+function allowDrop003(event) {
+    event.preventDefault();
+}
+
+function allowDrop004(event) {
+    event.preventDefault();
+}
+
+function allowDrop005(event) {
+    event.preventDefault();
+}
+
+function drop006(event) {
+    var data = event.dataTransfer.getData("choice001");
+    event.target.appendChild(document.getElementById(data));
+score001.innerHTML = b++;
+        place001.innerHTML = "Ha";
+}
+
+function drop007(event) {
+    var data = event.dataTransfer.getData("choice002");
+    event.target.appendChild(document.getElementById(data));
+score001.innerHTML = b++;
+        place002.innerHTML = "Hi";
+}
+
+function drop008(event) {
+    var data = event.dataTransfer.getData("choice003");
+    event.target.appendChild(document.getElementById(data));
+score001.innerHTML = b++;
+        place003.innerHTML = "Hu";
+}
+
+function drop009(event) {
+    var data = event.dataTransfer.getData("choice004");
+    event.target.appendChild(document.getElementById(data));
+score001.innerHTML = b++;
+        place004.innerHTML = "He";
+}
+
+function drop010(event) {
+    var data = event.dataTransfer.getData("choice005");
+    event.target.appendChild(document.getElementById(data));
+score001.innerHTML = b++;
+        place005.innerHTML = "Ho";
+}
+
+function drop001(event) {
+    event.preventDefault();
+}
+
+function drop002(event) {
+    event.preventDefault();
+}
+
+function drop003(event) {
+    event.preventDefault();
+
+}
+
+function drop004(event) {
+    event.preventDefault();
+}
+
+function drop005(event) {
+    event.preventDefault();
+}
+
+
+</script>
+
+</body>
+</html>

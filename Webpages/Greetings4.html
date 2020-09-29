@@ -1,0 +1,146 @@
+<html>
+<head><title>Learn Japanese</title>
+<link rel="stylesheet" type="text/css" href="Background.css">
+<style>
+.column {
+  float: left;
+  width: 31.2%;
+  padding: 10px;
+  height: 555px;
+  border-right: solid white;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  color: black;
+}
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: red;
+  float: left;
+  padding: 2px 6px;
+  text-decoration: none;
+  transition: background-color .3s;
+}
+
+.pagination a.active {
+  background-color: #;
+  color: white;
+}
+
+.pagination a:hover:not{
+  background-color: #00000;
+}
+
+</style>
+<script>
+    function goToNewPage()
+    {
+        var url = document.getElementById('list').value;
+        if(url != 'none') {
+            window.location = url;
+        }
+    }
+</script>
+
+</head>
+<audio id="myAudio">
+<source src="../Common Words/congrats.mp3" type="audio/mpeg">
+</audio>
+<audio id="myAudio2">
+<source src="../Common Words/gl.mp3" type="audio/mpeg">
+</audio>
+<body>
+<div class="bg">
+<center>
+<h1><img src="../Home/Japan flag.png" height="60px" width="70px">Learn Japanese with exciting games!<img src="../Home/Japan flag.png" height="60px" width="70px"></h1>
+
+
+
+<marquee>This is a project based webpage.</marquee>
+<br>
+<ul>
+<li class="dropdown">
+    <a href="Index.html" class="dropbtn">Home</a>
+    <div class="dropdown-content">
+      <a href="About Website.html">About Website</a>
+    </div>
+<li class="dropdown">
+    <a href="Writing.html" class="dropbtn">Writing</a>
+    <div class="dropdown-content">
+      <a href="Hiragana.html">Hiragana</a>
+      <a href="Katakana.html">Katakana</a>
+      <a href="Kanji.html">Kanji</a>
+    </div>
+    <li class="dropdown">
+    <a href="Common Words.html" class="dropbtn">Common Words</a>
+    <div class="dropdown-content">
+      <a href="Vegetables.html">Vegetables</a>
+      <a href="Fruits.html">Fruits</a>
+      <a href="Greetings.html">Greetings</a>
+      <a href="Other.html">Other</a>
+    </div><li class="dropdown">
+    <a href="Traditions.html" class="dropbtn">Traditions</a>
+    <div class="dropdown-content">
+      <a href="Store.html">Store</a>
+      <a href="Station.html">Station</a>
+      <a href="Neighbors.html">Neighbors</a>
+    </div><li class="dropdown">
+    <a href="Issues.html" class="dropbtn">Issues</a>
+    <div class="dropdown-content">
+      <a href="Contact details.html">Contact details</a>
+    </div>
+</ul>
+<center>
+<div class="d1">
+<center>
+<br>
+<div class="row">
+  <div class="column" style="background-color:#000;">
+<br>
+    <h2><img src= "../Common Words/congrats.png" width= "350px"></h2>
+    <p>Congratulations
+<br> (o-me-de-too)
+<button onclick="xplayAudio()" type="button"><img src="../Writing/sound.png" width="27px"></button></p>
+  </div>
+  <div class="column" style="background-color:#000;">
+<br>
+    <h2><img src="../Common Words/gl.png" width="350px"></h2>
+    <p>Good luck
+<br>(ga-n-ba-tte)
+<button onclick="yplayAudio()" type="button"><img src="../Writing/sound.png" width="27px"></button></p>
+  </div>
+  <div class="column" style="background-color:#000;">
+<br>
+    <h2></h2>
+    <p></p>
+  </div>
+<div class="pagination">
+  <a href="Greetings.html">1</a>
+  <a href="Greetings2.html">2</a>
+  <a href="Greetings3.html">3</a>
+  <a href="Greetings4.html" class="active">4</a>
+</div>
+</center>
+
+</div>
+</div>
+</center>
+<script>
+var x = document.getElementById("myAudio"); 
+
+function xplayAudio() { 
+  x.play(); 
+} 
+var y = document.getElementById("myAudio2"); 
+
+function yplayAudio() { 
+  y.play(); 
+} 
+</script>
+</body>
+</html>

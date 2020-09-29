@@ -1,0 +1,92 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+.bg {
+    background-image: url("../Home/Tokyo.jpg");
+    height: 100%; 
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+ul {
+  margin: 0;
+  width: 85%;
+  padding: 0;
+  overflow: hidden;
+  background-color: #870707;
+
+}
+
+li a, .dropbtn {
+  display: block;
+  width: 200px;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  padding: 0px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+.dropdown-content a:hover {
+background-color: #B9B0B0;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.active {
+  background-color: #OOOOO;
+}
+.d1
+{
+background-color:black;
+left:30px;
+width:80%;
+height:80%;
+font-size: 30px;
+font-family:comic sans ms;
+border:solid 9px red;
+border-radius:50px;
+color:white;
+}
+
+marquee
+{
+behavior:alternate;
+background-color:none;
+height:3%;
+font-variant:none;
+color:black;
+font-weight:bolder;
+font-size:23px;
+}
+
+h1 {
+height:3%;
+color:#2234A3;
+font-size: 60px;
+font-weight:bold;
+font-variant:small-caps;
+}
