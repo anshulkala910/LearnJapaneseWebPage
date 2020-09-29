@@ -1,1 +1,1 @@
-# LearnJapaneseWebPage
+# LearnJapaneseWebsite
